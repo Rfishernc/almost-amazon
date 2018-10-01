@@ -7,9 +7,19 @@ let cart = {
     image: ''
 }
 
-function getPrice(price) {
-    cart.price = price;
-    writeToDom('cartDiv', cart.price);
+function getPrice(book) {
+    cart.price = book.price;
+    cart.name = book.name;
+    cart.author = book.author;
+    cart.image = book.image;
+    let cartString = '';
+    cartString +=   `<div>`
+    cartString +=       `<p>${cart.name}</p>`
+    cartString +=       `<p>${cart.author}</p>`
+    cartString +=       `<p>${cart.price}</p>`
+    cartString +=       `<image src=${cart.image}>`
+    cartString +=   `</div>`
+    writeToDom('cartDiv', cartString);
 }
 
 export {getPrice};

@@ -10,7 +10,7 @@ let book = {
 
 function addToCart() {
     document.getElementById('cartButt').addEventListener('click', function() {
-        getPrice(book.price);
+        getPrice(book);
     })
 }
 
