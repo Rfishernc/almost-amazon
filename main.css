@@ -1,0 +1,12 @@
+body {
+    background-color: darkslateblue;
+}
+
+#cartButt {
+    display: inline;
+}
+
+#cartH {
+    display: inline;
+    margin-left: 45%;
+}
